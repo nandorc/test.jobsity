@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::view('/', 'home', ['name' => 'Daniel']);
+Route::prefix('user')->group(function () {
+    Route::get('/{id?}', function ($id = 'No user specified') {
+        return 'User: ' . $id;
+    })->whereAlpha('id');
 });
