@@ -17,6 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'home', ['name' => 'Daniel']);
 Route::prefix('user')->group(function () {
     Route::get('/{id?}', function ($id = 'No user specified') {
-        return 'User: ' . $id;
+        return 'UserId: ' . $id;
     })->whereAlpha('id');
 });
