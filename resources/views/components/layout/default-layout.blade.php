@@ -3,7 +3,7 @@
 
 <head>
     <x-application.metadata />
-    <title>ChatBot{{ isset($pageTitle) ? ' - ' . $pageTitle : '' }}</title>
+    <title>AccountBot{{ isset($pageTitle) ? ' - ' . $pageTitle : '' }}</title>
     <link rel="icon" href="{{ asset('img/icons/favicon.png') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" />
     @stack('styles')
