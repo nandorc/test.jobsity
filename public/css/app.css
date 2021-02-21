@@ -1,0 +1,115 @@
+main#appcontainer {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+img#bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%)translateY(-50%);
+    box-sizing: border-box;
+    height: 100%;
+}
+
+@media(orientation: landscape) {
+    img#bg {
+        height: unset;
+        width: 100%;
+    }
+}
+nav#mainnavigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1vh;
+    background-color: rgba(29, 102, 197, 0.5);
+}
+
+nav#mainnavigation div#brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 8vh;
+    font-family: Helvetica;
+    font-size: 4vh;
+    font-weight: bolder;
+    color: white;
+    overflow: hidden;
+}
+
+nav#mainnavigation div#brand img {
+    height: 150%;
+}
+div#content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%)translateY(-50%);
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1vh;
+    background-color: rgba(29, 102, 197, 0.5);
+    font-family: Helvetica;
+    font-size: 1.5vh;
+    color: white;
+}
+
+footer img.logo {
+    height: 5vh;
+}
+
+footer div.authordata {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div.mark {
+    margin-bottom: 1vh;
+    font-weight: bold;
+}
+
+footer div.contactdata {
+    margin-left: 1vh;
+}
+
+footer div#authorname {
+    font-size: 2vh;
+}
+
+footer div#authoremail {
+    font-size: 1.3vh;
+}
+
+footer div#projectrepo a {
+    text-decoration: none;
+    color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}

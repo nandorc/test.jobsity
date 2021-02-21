@@ -1,0 +1,48 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1vh;
+    background-color: rgba(29, 102, 197, 0.5);
+    font-family: Helvetica;
+    font-size: 1.5vh;
+    color: white;
+}
+
+footer img.logo {
+    height: 5vh;
+}
+
+footer div.authordata {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div.mark {
+    margin-bottom: 1vh;
+    font-weight: bold;
+}
+
+footer div.contactdata {
+    margin-left: 1vh;
+}
+
+footer div#authorname {
+    font-size: 2vh;
+}
+
+footer div#authoremail {
+    font-size: 1.3vh;
+}
+
+footer div#projectrepo a {
+    text-decoration: none;
+    color: white;
+}

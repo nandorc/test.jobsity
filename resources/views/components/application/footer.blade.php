@@ -1,13 +1,19 @@
 <footer>
     <div id="authorinfo">
-        Developed by
-        Daniel F. Rivera C.
-        tutordesoftware@gmail.com
-        https://github.com/nandorc/test.jobsity
-        <img src="{{ asset('img/logos/dsoft.png') }}" alt="Logo D'Soft" />
+        <div class="mark">Developed by</div>
+        <div class="authordata">
+            <img class="logo" src="{{ asset('img/logos/dsoft.png') }}" alt="Logo D'Soft" />
+            <div class="contactdata">
+                <div id="authorname">Daniel F. Rivera C.</div>
+                <div id="authoremail">tutordesoftware@gmail.com</div>
+                <div id="projectrepo">
+                    <a href="https://github.com/nandorc/test.jobsity" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="sponsorinfo">
-        Powered by
-        <img src="{{ asset('img/logos/jobsity.png') }}" alt="Logo Jobsity" />
+        <div class="mark">Powered by</div>
+        <img class="logo" src="{{ asset('img/logos/jobsity.png') }}" alt="Logo Jobsity" />
     </div>
 </footer>

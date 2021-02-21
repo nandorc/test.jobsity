@@ -1,0 +1,30 @@
+nav#mainnavigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1vh;
+    background-color: rgba(29, 102, 197, 0.5);
+}
+
+nav#mainnavigation div#brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 8vh;
+    font-family: Helvetica;
+    font-size: 4vh;
+    font-weight: bolder;
+    color: white;
+    overflow: hidden;
+}
+
+nav#mainnavigation div#brand img {
+    height: 150%;
+}
