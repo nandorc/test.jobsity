@@ -1,0 +1,20 @@
+div#chatbox {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 102, 197, 0.5);
+    border: 0.5vh solid black;
+    border-radius: 3vh;
+    overflow: hidden;
+}
+
+@media(min-width: 768px) {
+    div#chatbox {
+        width: 50%;
+        margin: 0 auto;
+    }
+}

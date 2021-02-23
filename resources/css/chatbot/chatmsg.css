@@ -1,0 +1,26 @@
+div.chatmsg {
+    box-sizing: border-box;
+    width: 70%;
+    padding: 1.5vh;
+    background-color: black;
+    border-radius: 2vh;
+    margin-bottom: 1vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    line-height: 1.5;
+    word-wrap: break-word;
+    color: white;
+}
+
+div.chatmsg:last-child {
+    margin-bottom: 0;
+}
+
+div.chatmsg.botmsg {
+    background-color: rgb(29, 102, 197);
+}
+
+div.chatmsg.usermsg {
+    background-color: rgb(199, 172, 21);
+    margin-left: auto;
+}

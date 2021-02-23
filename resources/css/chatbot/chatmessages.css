@@ -1,0 +1,17 @@
+div#chatmessages {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    width: 95%;
+    height: 63.5vh;
+    margin: 2vh auto;
+    overflow: auto;
+}
+
+@media(min-width: 768px) {
+    div#chatmessages {
+        height: 64.5vh;
+    }
+}
