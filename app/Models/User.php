@@ -12,4 +12,8 @@ class User extends Model
     protected $primaryKey = 'uid';
     protected $keyType = 'string';
     public $incrementing = false;
+    public function transactions()
+    {
+        return $this->hasMany(TransactionLog::class, 'account', 'uid');
+    }
 }

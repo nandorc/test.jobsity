@@ -27,7 +27,10 @@ class ChatBot extends Controller
         $isoptionmodule = $module == 'unlogged' || $module == 'logged';
         if ($isoptionmodule) return $this->optionModule($module, $message);
         $nextroute = $request->session()->get('nextroute');
-        if ($nextroute == 'login.check.password') $request->session()->keep(['_uid']);
+        if ($nextroute == 'login.check.password' || $nextroute == 'signin.check.password')
+            $request->session()->keep(['_uid']);
+        else if ($nextroute == 'signin.check.confirmation' || $nextroute == 'signin.set.currency')
+            $request->session()->keep(['_uid', '_pwd']);
         return redirect()->route($nextroute)->withInput($request->only('message'));
     }
     private function optionModule(string $module, string $message)

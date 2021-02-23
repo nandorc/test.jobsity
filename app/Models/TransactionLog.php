@@ -9,4 +9,8 @@ class TransactionLog extends Model
 {
     use HasFactory;
     protected $table = 'transaction_logs';
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'account', 'uid');
+    }
 }
