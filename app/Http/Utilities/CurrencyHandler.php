@@ -19,6 +19,13 @@ class CurrencyHandler
             $request->session()->put('currencyhandler', $latest);
         }
     }
+    public function convert(string $fromCode, string $toCode, float $amount)
+    {
+        if ($fromCode == $toCode) return round($amount, 2);
+        $fromVal = $this->latest[$fromCode];
+        $toVal = $this->latest[$toCode];
+        return round(($amount * $toVal) / $fromVal, 2);
+    }
     public function isSupported(string $cod)
     {
         return isset($this->latest[$cod]);

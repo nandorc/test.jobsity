@@ -47,6 +47,12 @@ class ChatBot extends Controller
     }
     private function loggedModule(string $option)
     {
-        if ($option == 'logout') return redirect()->route('account.logout');
+        if ($option == 'deposit') return redirect()->route('account.transaction.deposit.init');
+        else if ($option == 'withdraw') return redirect()->route('account.transaction.withdraw.init');
+        else if ($option == 'balance') return redirect()->route('account.balance');
+        else if ($option == 'defaultcurrency') return redirect()->route('account.currency.select');
+        else if ($option == 'convert') return redirect()->route('account.utilities.converter.init');
+        else if ($option == 'logout') return redirect()->route('account.logout');
+        else return redirect()->route('account.init');
     }
 }

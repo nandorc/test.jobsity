@@ -58,7 +58,7 @@ Route::prefix('account')->name('account.')->middleware('userinsession')->group(f
         Route::get('/', [Account::class, 'selectCurrency'])->name('select');
         Route::get('update', [Account::class, 'updateCurrency'])->name('update');
     });
-    Route::prefix('utilities')->name('utilities')->group(function () {
+    Route::prefix('utilities')->name('utilities.')->group(function () {
         Route::prefix('converter')->name('converter.')->group(function () {
             Route::get('/', [Converter::class, 'init'])->name('init');
             Route::get('convert', [Converter::class, 'convert'])->name('convert');
